@@ -1,42 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Diet Tracker</title>
-</head>
-<body>
-    <div class="container">
-        <Header>
-            <div class="title">
-                <h4>Diet Tracker</h4>
-            </div>
-            <div class="navigations">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Login</li>
-                    <li>Signup</li>
-                </ul>
-            </div>
-        </Header>
-        <div class="content">
-            <img src="./images/food.jpeg" alt="food">
-            <img src="./images/diet planner.jpeg" alt="diet planner">
-            <img src="./images/eating.jpeg" alt="eating">
-        </div>
-        <div>
-            <p>Want to </p>
-        </div>
-        <footer>
-            <div class="footer-content">
-                <ul>
-                    <li>Diet-Tracker@email.com</li>
-                    <li>+91 5555555555</li>
-                </ul>
-            </div>
-        </footer>
+  </head>
+  <body>
+    <header>
+      <div >
+        <h4 class="title">Diet Tracker</h4>
+      </div>
+      <div class="navigations">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Login</li>
+          <li>Signup</li>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <img src="./images/food.jpeg" alt="food" />
+      <img src="./images/diet planner.jpeg" alt="diet planner" />
+      <img src="./images/eating.jpeg" alt="eating" />
     </div>
-</body>
+    <div class="tag-line">
+      <h2>Hey! do you want a glow up!</h2>
+      <h2>Are you willing to challenge yourself?</h2>
+      <p>
+        So what are you waiting for? Just add your physical details in the
+        sectiono below and get a well - planned diet for yourself based on your
+        body.
+      </p>
+    </div>
+    <form action="" id="info">
+      <h2>Next step to healthy life!</h2>
+      <h3>Add your details below</h3>
+      <label for="gender">Gender :</label>
+      <select name="gender" id="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br />
+      <br />
+      <label for="age">Age :</label>
+      <input type="number" name="age" id="age" min="10" max="120" required />
+      <br />
+      <br />
+      <label for="weigjt">Weight (kg):</label>
+      <input
+        type="number"
+        id="weight"
+        name="weight"
+        min="10"
+        max="150"
+        required
+      />
+      <br />
+      <br />
+      <label for="height">Height(feet) :</label>
+      <input type="number" name="height" id="height" min="3" max="7" required />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+      <br />
+    </form>
+    <footer>
+      <div class="footer-content">
+        <ul>
+          <li>Diet-Tracker@email.com</li>
+          <li>+91 5555555555</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
